@@ -1,0 +1,22 @@
+{
+  "NTE": {
+    "ActorTypes": {
+      "personaggio": "Personaggio",
+      "png": "PNG"
+    },
+    "Sheet": {
+      "Qualita": "Qualità",
+      "Valori": "Valori",
+      "Note": "Note",
+      "AddQualita": "Aggiungi Qualità",
+      "AddValore": "Aggiungi Valore",
+      "Speranza": "Speranza",
+      "Dolore": "Dolore",
+      "Paura": "Paura",
+      "TokenBag": "Sacchetto Token",
+      "Biografia": "Biografia",
+      "Concetto": "Concetto",
+      "Costo": "Costo"
+    }
+  }
+}

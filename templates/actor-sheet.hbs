@@ -1,0 +1,199 @@
+<div class="nte-sheet">
+
+  <!-- HEADER -->
+  <header class="nte-header">
+    <img class="nte-avatar" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" />
+    <div class="nte-header-fields">
+      <input class="nte-name" type="text" value="{{actor.name}}" placeholder="Nome personaggio" />
+      <input type="text" data-flag="concetto" value="{{flags.concetto}}" placeholder="Concetto (chi sei in una frase)" class="nte-input-field" />
+      <input type="text" data-flag="rischio"  value="{{flags.rischio}}"  placeholder="Per cosa sono disposto a rischiare?" class="nte-input-field nte-rischio" />
+    </div>
+  </header>
+
+  <!-- ALVEARE -->
+  <div class="nte-hive-section">
+    <div class="nte-hive">
+      <div class="nte-hex a {{#if flags.hive_0_0_checked}}checked{{/if}}" style="left:95px;top:20px;">
+        <input type="checkbox" class="nte-hex-check-hidden" data-ri="0" data-ci="0" {{#if flags.hive_0_0_checked}}checked{{/if}} />
+        <span class="nte-dot {{#if flags.hive_0_0_checked}}nte-dot-checked{{/if}}"></span>
+        <textarea class="nte-hex-text" data-ri="0" data-ci="0" placeholder="Abilità">{{flags.hive_0_0_testo}}</textarea>
+        <span class="nte-hex-lbl">ABILITÀ</span>
+      </div>
+      <div class="nte-hex a {{#if flags.hive_0_1_checked}}checked{{/if}}" style="left:203px;top:20px;">
+        <input type="checkbox" class="nte-hex-check-hidden" data-ri="0" data-ci="1" {{#if flags.hive_0_1_checked}}checked{{/if}} />
+        <span class="nte-dot {{#if flags.hive_0_1_checked}}nte-dot-checked{{/if}}"></span>
+        <textarea class="nte-hex-text" data-ri="0" data-ci="1" placeholder="Abilità">{{flags.hive_0_1_testo}}</textarea>
+        <span class="nte-hex-lbl">ABILITÀ</span>
+      </div>
+      <div class="nte-hex a {{#if flags.hive_0_2_checked}}checked{{/if}}" style="left:311px;top:20px;">
+        <input type="checkbox" class="nte-hex-check-hidden" data-ri="0" data-ci="2" {{#if flags.hive_0_2_checked}}checked{{/if}} />
+        <span class="nte-dot {{#if flags.hive_0_2_checked}}nte-dot-checked{{/if}}"></span>
+        <textarea class="nte-hex-text" data-ri="0" data-ci="2" placeholder="Abilità">{{flags.hive_0_2_testo}}</textarea>
+        <span class="nte-hex-lbl">ABILITÀ</span>
+      </div>
+      <div class="nte-hex a {{#if flags.hive_1_0_checked}}checked{{/if}}" style="left:41px;top:116px;">
+        <input type="checkbox" class="nte-hex-check-hidden" data-ri="1" data-ci="0" {{#if flags.hive_1_0_checked}}checked{{/if}} />
+        <span class="nte-dot {{#if flags.hive_1_0_checked}}nte-dot-checked{{/if}}"></span>
+        <textarea class="nte-hex-text" data-ri="1" data-ci="0" placeholder="Abilità">{{flags.hive_1_0_testo}}</textarea>
+        <span class="nte-hex-lbl">ABILITÀ</span>
+      </div>
+      <div class="nte-hex q {{#if flags.hive_1_1_checked}}checked{{/if}}" style="left:149px;top:116px;">
+        <input type="checkbox" class="nte-hex-check-hidden" data-ri="1" data-ci="1" {{#if flags.hive_1_1_checked}}checked{{/if}} />
+        <span class="nte-dot {{#if flags.hive_1_1_checked}}nte-dot-checked{{/if}}"></span>
+        <textarea class="nte-hex-text" data-ri="1" data-ci="1" placeholder="Qualità">{{flags.hive_1_1_testo}}</textarea>
+        <span class="nte-hex-lbl">QUALITÀ</span>
+      </div>
+      <div class="nte-hex q {{#if flags.hive_1_2_checked}}checked{{/if}}" style="left:257px;top:116px;">
+        <input type="checkbox" class="nte-hex-check-hidden" data-ri="1" data-ci="2" {{#if flags.hive_1_2_checked}}checked{{/if}} />
+        <span class="nte-dot {{#if flags.hive_1_2_checked}}nte-dot-checked{{/if}}"></span>
+        <textarea class="nte-hex-text" data-ri="1" data-ci="2" placeholder="Qualità">{{flags.hive_1_2_testo}}</textarea>
+        <span class="nte-hex-lbl">QUALITÀ</span>
+      </div>
+      <div class="nte-hex a {{#if flags.hive_1_3_checked}}checked{{/if}}" style="left:365px;top:116px;">
+        <input type="checkbox" class="nte-hex-check-hidden" data-ri="1" data-ci="3" {{#if flags.hive_1_3_checked}}checked{{/if}} />
+        <span class="nte-dot {{#if flags.hive_1_3_checked}}nte-dot-checked{{/if}}"></span>
+        <textarea class="nte-hex-text" data-ri="1" data-ci="3" placeholder="Abilità">{{flags.hive_1_3_testo}}</textarea>
+        <span class="nte-hex-lbl">ABILITÀ</span>
+      </div>
+      <div class="nte-hex a {{#if flags.hive_2_0_checked}}checked{{/if}}" style="left:-13px;top:212px;">
+        <input type="checkbox" class="nte-hex-check-hidden" data-ri="2" data-ci="0" {{#if flags.hive_2_0_checked}}checked{{/if}} />
+        <span class="nte-dot {{#if flags.hive_2_0_checked}}nte-dot-checked{{/if}}"></span>
+        <textarea class="nte-hex-text" data-ri="2" data-ci="0" placeholder="Abilità">{{flags.hive_2_0_testo}}</textarea>
+        <span class="nte-hex-lbl">ABILITÀ</span>
+      </div>
+      <div class="nte-hex q {{#if flags.hive_2_1_checked}}checked{{/if}}" style="left:95px;top:212px;">
+        <input type="checkbox" class="nte-hex-check-hidden" data-ri="2" data-ci="1" {{#if flags.hive_2_1_checked}}checked{{/if}} />
+        <span class="nte-dot {{#if flags.hive_2_1_checked}}nte-dot-checked{{/if}}"></span>
+        <textarea class="nte-hex-text" data-ri="2" data-ci="1" placeholder="Qualità">{{flags.hive_2_1_testo}}</textarea>
+        <span class="nte-hex-lbl">QUALITÀ</span>
+      </div>
+      <div class="nte-hex arc {{#if flags.hive_2_2_checked}}checked{{/if}}" style="left:203px;top:212px;">
+        <input type="checkbox" class="nte-hex-check-hidden" data-ri="2" data-ci="2" {{#if flags.hive_2_2_checked}}checked{{/if}} />
+        <span class="nte-dot {{#if flags.hive_2_2_checked}}nte-dot-checked{{/if}}"></span>
+        <textarea class="nte-hex-text" data-ri="2" data-ci="2" placeholder="Archetipo">{{flags.hive_2_2_testo}}</textarea>
+        <span class="nte-hex-lbl">ARCHETIPO</span>
+      </div>
+      <div class="nte-hex q {{#if flags.hive_2_3_checked}}checked{{/if}}" style="left:311px;top:212px;">
+        <input type="checkbox" class="nte-hex-check-hidden" data-ri="2" data-ci="3" {{#if flags.hive_2_3_checked}}checked{{/if}} />
+        <span class="nte-dot {{#if flags.hive_2_3_checked}}nte-dot-checked{{/if}}"></span>
+        <textarea class="nte-hex-text" data-ri="2" data-ci="3" placeholder="Qualità">{{flags.hive_2_3_testo}}</textarea>
+        <span class="nte-hex-lbl">QUALITÀ</span>
+      </div>
+      <div class="nte-hex a {{#if flags.hive_2_4_checked}}checked{{/if}}" style="left:419px;top:212px;">
+        <input type="checkbox" class="nte-hex-check-hidden" data-ri="2" data-ci="4" {{#if flags.hive_2_4_checked}}checked{{/if}} />
+        <span class="nte-dot {{#if flags.hive_2_4_checked}}nte-dot-checked{{/if}}"></span>
+        <textarea class="nte-hex-text" data-ri="2" data-ci="4" placeholder="Abilità">{{flags.hive_2_4_testo}}</textarea>
+        <span class="nte-hex-lbl">ABILITÀ</span>
+      </div>
+      <div class="nte-hex a {{#if flags.hive_3_0_checked}}checked{{/if}}" style="left:41px;top:308px;">
+        <input type="checkbox" class="nte-hex-check-hidden" data-ri="3" data-ci="0" {{#if flags.hive_3_0_checked}}checked{{/if}} />
+        <span class="nte-dot {{#if flags.hive_3_0_checked}}nte-dot-checked{{/if}}"></span>
+        <textarea class="nte-hex-text" data-ri="3" data-ci="0" placeholder="Abilità">{{flags.hive_3_0_testo}}</textarea>
+        <span class="nte-hex-lbl">ABILITÀ</span>
+      </div>
+      <div class="nte-hex q {{#if flags.hive_3_1_checked}}checked{{/if}}" style="left:149px;top:308px;">
+        <input type="checkbox" class="nte-hex-check-hidden" data-ri="3" data-ci="1" {{#if flags.hive_3_1_checked}}checked{{/if}} />
+        <span class="nte-dot {{#if flags.hive_3_1_checked}}nte-dot-checked{{/if}}"></span>
+        <textarea class="nte-hex-text" data-ri="3" data-ci="1" placeholder="Qualità">{{flags.hive_3_1_testo}}</textarea>
+        <span class="nte-hex-lbl">QUALITÀ</span>
+      </div>
+      <div class="nte-hex q {{#if flags.hive_3_2_checked}}checked{{/if}}" style="left:257px;top:308px;">
+        <input type="checkbox" class="nte-hex-check-hidden" data-ri="3" data-ci="2" {{#if flags.hive_3_2_checked}}checked{{/if}} />
+        <span class="nte-dot {{#if flags.hive_3_2_checked}}nte-dot-checked{{/if}}"></span>
+        <textarea class="nte-hex-text" data-ri="3" data-ci="2" placeholder="Qualità">{{flags.hive_3_2_testo}}</textarea>
+        <span class="nte-hex-lbl">QUALITÀ</span>
+      </div>
+      <div class="nte-hex a {{#if flags.hive_3_3_checked}}checked{{/if}}" style="left:365px;top:308px;">
+        <input type="checkbox" class="nte-hex-check-hidden" data-ri="3" data-ci="3" {{#if flags.hive_3_3_checked}}checked{{/if}} />
+        <span class="nte-dot {{#if flags.hive_3_3_checked}}nte-dot-checked{{/if}}"></span>
+        <textarea class="nte-hex-text" data-ri="3" data-ci="3" placeholder="Abilità">{{flags.hive_3_3_testo}}</textarea>
+        <span class="nte-hex-lbl">ABILITÀ</span>
+      </div>
+      <div class="nte-hex a {{#if flags.hive_4_0_checked}}checked{{/if}}" style="left:95px;top:404px;">
+        <input type="checkbox" class="nte-hex-check-hidden" data-ri="4" data-ci="0" {{#if flags.hive_4_0_checked}}checked{{/if}} />
+        <span class="nte-dot {{#if flags.hive_4_0_checked}}nte-dot-checked{{/if}}"></span>
+        <textarea class="nte-hex-text" data-ri="4" data-ci="0" placeholder="Abilità">{{flags.hive_4_0_testo}}</textarea>
+        <span class="nte-hex-lbl">ABILITÀ</span>
+      </div>
+      <div class="nte-hex a {{#if flags.hive_4_1_checked}}checked{{/if}}" style="left:203px;top:404px;">
+        <input type="checkbox" class="nte-hex-check-hidden" data-ri="4" data-ci="1" {{#if flags.hive_4_1_checked}}checked{{/if}} />
+        <span class="nte-dot {{#if flags.hive_4_1_checked}}nte-dot-checked{{/if}}"></span>
+        <textarea class="nte-hex-text" data-ri="4" data-ci="1" placeholder="Abilità">{{flags.hive_4_1_testo}}</textarea>
+        <span class="nte-hex-lbl">ABILITÀ</span>
+      </div>
+      <div class="nte-hex a {{#if flags.hive_4_2_checked}}checked{{/if}}" style="left:311px;top:404px;">
+        <input type="checkbox" class="nte-hex-check-hidden" data-ri="4" data-ci="2" {{#if flags.hive_4_2_checked}}checked{{/if}} />
+        <span class="nte-dot {{#if flags.hive_4_2_checked}}nte-dot-checked{{/if}}"></span>
+        <textarea class="nte-hex-text" data-ri="4" data-ci="2" placeholder="Abilità">{{flags.hive_4_2_testo}}</textarea>
+        <span class="nte-hex-lbl">ABILITÀ</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- SVENTURE + STATI -->
+  <div class="nte-bottom">
+    <div class="nte-bottom-left">
+      <div class="nte-section-title">QUALI SVENTURE MI AFFLIGGONO?</div>
+      <div class="nte-sventure">
+        {{#each flags.sventure as |s idx|}}
+        <div class="nte-sventura">
+          <input type="checkbox" class="nte-sv-check" data-flag="sventure.{{idx}}.checked" {{#if s.checked}}checked{{/if}} />
+          <input type="text" class="nte-sv-text" data-flag="sventure.{{idx}}.testo" value="{{s.testo}}" placeholder="Sventura {{nte_add idx 1}}" />
+        </div>
+        {{/each}}
+      </div>
+    </div>
+    <div class="nte-bottom-right">
+      <div class="nte-section-title">COSA MI ANNEBBIA LA MENTE?</div>
+      <div class="nte-stati">
+        <div class="nte-stato confusione">
+          <div class="nte-stato-header">
+            <span>CONFUSIONE</span>
+            <input type="checkbox" class="nte-stato-check" data-flag="confusione.0" {{#if flags.confusione.[0]}}checked{{/if}} />
+          </div>
+        </div>
+        <div class="nte-stato adrenalina">
+          <div class="nte-stato-header">
+            <span>ADRENALINA</span>
+            <input type="checkbox" class="nte-stato-check" data-flag="adrenalina.0" {{#if flags.adrenalina.[0]}}checked{{/if}} />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- APPUNTI & EQUIP -->
+  <div class="nte-extras">
+    <div class="nte-extra-field">
+      <label>APPUNTI</label>
+      <textarea data-flag="appunti" placeholder="Note di gioco...">{{flags.appunti}}</textarea>
+    </div>
+    <div class="nte-extra-field">
+      <label>EQUIPAGGIAMENTO</label>
+      <textarea data-flag="equip" placeholder="Oggetti, armi, risorse...">{{flags.equip}}</textarea>
+    </div>
+  </div>
+
+  <!-- LEZIONI -->
+  <div class="nte-lezioni-section">
+    <div class="nte-lezioni-header">
+      <span class="nte-section-title">LEZIONI</span>
+      <button type="button" class="nte-lz-add-btn" data-action="addLezioneSlot">+ Slot</button>
+    </div>
+    <div class="nte-lezioni" id="nte-lezioni-drop">
+      {{#each flags.lezioni as |l idx|}}
+      <div class="nte-lezione-slot {{#if l.id}}filled{{/if}}"
+           data-slot="{{idx}}"
+           data-item-id="{{l.id}}">
+        {{#if l.id}}
+          <span class="nte-lz-title" title="{{l.testo}}">{{l.nome}}</span>
+          <button type="button" class="nte-lz-remove" data-slot="{{idx}}">✕</button>
+        {{else}}
+          <span class="nte-lz-empty">Trascina una lezione qui</span>
+        {{/if}}
+      </div>
+      {{/each}}
+    </div>
+  </div>
+
+</div>

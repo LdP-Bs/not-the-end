@@ -1,0 +1,36 @@
+{
+  "id": "not-the-end",
+  "title": "Not the End",
+  "description": "Sistema completo per Not the End (Fumble GDR) — scheda personaggio, tipi Actor personalizzati e token bag.",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13"
+  },
+  "authors": [
+    {
+      "name": "B1r0n"
+    }
+  ],
+  "esmodules": [
+    "not-the-end.js"
+  ],
+  "styles": [
+    "styles/not-the-end.css"
+  ],
+  "languages": [
+    {
+      "lang": "it",
+      "name": "Italiano",
+      "path": "lang/it.json"
+    }
+  ],
+  "documentTypes": {
+    "Item": [
+      "lezione"
+    ]
+  },
+  "manifest": "https://raw.githubusercontent.com/LdP-Bs/not-the-end/main/module.json",
+  "download": "https://github.com/LdP-Bs/not-the-end/releases/download/v1.0.0/not-the-end.zip",
+  "url": "https://github.com/LdP-Bs/not-the-end"
+}
